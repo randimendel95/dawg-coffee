@@ -4,7 +4,7 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
 
-/*makes default settings for all*/
+/*makes default settings for all code*/
 body {   
   font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
   font-size:16px;
@@ -12,25 +12,26 @@ body {
   background-color:#E9EAEE;
 }
 
-/*default headings*/
-body > h1,h2,h3,h4,h5,h6 {
+/*default headings font*/
+h1,h2,h3,h4,h5,h6 {
   font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif ;
 }
 
+/*color change for 2nd headings*/
 body > h2 {
    color:BC6026;
 }
 
-/*navigation bar settings */
+/*navigation bar elements are inline */
 .navbar >ul >li {
   display:inline; 
 
 }
 
-/*default navbar */
+/*default navbar color */
 .navbar{
   background-color:#181C22;
-
+  margin-bottom:0px;
 }
 
 .navbar >ul >li >a {
@@ -56,12 +57,16 @@ body > h2 {
 
 .headpg{
   padding-top:3em;
+  padding-right:3em;
 }
 
 .headline{
   font-style:italic;
   height:1.5em;
   padding-bottom:1em;
+  fill:#D87E28;
+  padding-right:0px;
+  padding-left:0px;
 }
 
 .row{
@@ -76,8 +81,8 @@ body > h2 {
   margin-bottom:1.5em;
 }
 
-.map > img {
-  border:5px solid;
+.map img {
+  border:5px;
   border-radius:5px;
 }
 
@@ -94,8 +99,9 @@ body > h2 {
   background-color:#dbdce3;
 } 
 
-.ourstory > img {
+.ourstory img {
   max-height:300px;
+  max-width:300px;
   width:100vw;
   margin-left:1em;
   boarder-radius:5px;
@@ -112,10 +118,9 @@ body > h2 {
 
 .footer {
   text-align:left;
-  border-style:solid;
+  border-top-style:solid;
   border-color:#D87E28;
-  border-top-height:3px;
-  border-bottom-height:0px;
+  border-height:3px;
   background-color:#afb3c2;
   font-size:12px;
 }
@@ -124,6 +129,7 @@ body > h2 {
 @media screen and (min-width: 768px) {
   .lowerlogo {
     height:1.5em;
+    width:1.5em;
     padding-bottom:1.5em;
     fill:#D87E28;
   }
@@ -131,6 +137,7 @@ body > h2 {
   .navbar{
     background-color:rgba(24, 28, 34, 0.8);
     font-size:20px;
+    margin:0px;
   }
   
   .logo {
@@ -140,6 +147,8 @@ body > h2 {
   .navbar >ul > li >a{
     padding-left:1em;
     padding-right:1em;
+    margin-bottom:0px;
+    padding-bottom:0px;
   }
   
   .headpg{
@@ -160,6 +169,7 @@ body > h2 {
 
   .ourstory > img {
     max-height:400px;
+    max-width:400px;
   }
 
   .footerinfo{
