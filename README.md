@@ -7,14 +7,14 @@ This folder contains your submission for the [responsive challenge](http://facul
 
 
 ##### 2. Did you receive any help from others (classmates, etc)? If so, please list who. #####
-> Worked through a glitch with Isabella Spaletta (from a different class)
+> Worked through a few questions with Isabella Spaletta (from a different class)
 
 ##### 3. Did you complete any advanced extensions to this challenge? If so, what? #####
 > no
 
 ##### 4. Approximately how many hours did it take you to complete this challenge? #####
-> 14 hours
+> 18 hours
 
 ##### 5. Did you encounter any problems in this challenge we should warn students about in the future? How can we make the challenge better? #####
-> There were some specifications for spacing and such that were unclear.  The differnce between padding and margins were difficult.  Not sure if about me and menu were supposed to be on main website or only accessed through links.  
+> There were some specifications for spacing and such that were unclear.  The differnce between padding and margins were difficult.  Not sure if about me and menu were supposed to be on main website or only accessed through links.  A few other things such as sizing, padding and margin was unclear on what was wanted.
 
