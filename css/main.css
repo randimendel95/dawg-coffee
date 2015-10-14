@@ -22,32 +22,38 @@ body h2 {
    color:BC6026;
 }
 
+/* sets all svg element heights equal to text around */
+body svg {
+  height:1em;
+}
+
+
 /*navigation bar elements are inline */
 .navbar ul li {
   display:inline; 
 }
 
-/*default navbar color */
+/*default navbar color, makes fixed*/
 .navbar{
   background-color:#181C22;
-  margin-bottom:0px;
+  position:fixed;
+  width:100vw;
 }
 
 .navbar ul li a {
   color:white;
-  font-padding:.5em;
+  padding:.5em;
   font-size:16px;
   font-variant:small-caps;
   text-decoration:none;
-  position:fixed;
 }
 
 .logo {
   margin-left:15px;
-  height:16px;
   fill:currentColor;
 }
 
+/*makes elements change color when active or hovered over */
 .navbar ul li a:hover {
    color:#D87E28;
    fill:#D87E28;
@@ -55,21 +61,28 @@ body h2 {
 }
 
 .headpg{
-  font-padding-top:3em;
-  font-padding-right:3em;
-  margin:0px;
+  padding-top:3em;
+  padding-right:5em;
+}
+
+.headpg h1 {
+  font-size:3em;
 }
 
 .headline{
   font-style:italic;
-  height:1.5em;
   padding-bottom:1em;
-  fill:#D87E28;
-  padding-right:0px;
-  padding-left:0px;
+  padding-top:1em;
 }
 
-.row{
+/*logo in headline settings (hidden in xs screen size)*/
+.headline svg {
+  height:1.5em;
+  fill:#D87E28;
+}
+
+
+.information .row {
   text-align:center;
   background-color:#dbdce3;
 }
@@ -81,18 +94,25 @@ body h2 {
   margin-bottom:1.5em;
 }
 
+/*rounds edges of map*/
 .map img {
   border:5px;
   border-radius:5px;
 }
 
-.menu > h1 {
+.menu h1 {
   color:#D87E28;
   text-align:center;
 }
 
-.drinks, .treats {
+.menu .row {
   text-align:left;
+}
+
+/*makes all descriptions of drinks/food italics*/
+.drinks dd, .treats dd {
+  font-style:italic;
+  padding-left:1em;
 }
 
 .ourstory{
@@ -101,13 +121,14 @@ body h2 {
 
 .ourstory img {
   max-height:300px;
-  max-width:300px;
-  width:100vw;
+  width:auto;
   margin-left:1em;
-  boarder-radius:5px;
+  border:5px;
+  border-radius:5px;
+  float:right;
 }
 
-.ourstory > h1 {
+.ourstory  h1 {
   color:#D87E28;
   text-align:center;
 }
@@ -116,14 +137,16 @@ body h2 {
   margin-left:1em;
 }
 
-.row {
-  text-align:left;
+.footer .row {
   border-top-style:solid;
   border-color:#D87E28;
   border-height:3px;
   background-color:#afb3c2;
   font-size:12px;
+  padding:1em;
+  text-align:left;
 }
+
 
 
 @media screen and (min-width: 768px) {
@@ -138,17 +161,17 @@ body h2 {
     background-color:rgba(24, 28, 34, 0.8);
     font-size:20px;
     margin:0px;
-    font-padding-left:1em;
-    font-padding-right:1em;
+
   }
   
   .logo {
     height:20px;
   }
   
+  /*changes font padding on left and right to 1em */
   .navbar ul  li a {
-    font-padding-left:1em;
-    font-padding-right:1em;
+    padding-left:1em;
+    padding-right:1em;
   }
   
   .headpg {
@@ -159,21 +182,16 @@ body h2 {
     color:white;
     width:100vw;
   }
-
-  .headpg h1 {
-    font-size:3em;
-  }
   
   .headline {
     text-align:center;
     font-size:1.25em;
-    padding:3em;
-
+    padding-top:3em;
+    padding-bottom:3em;
   }
 
   .ourstory img {
     max-height:400px;
-    max-width:400px;
   }
 
   .footerinfo {
